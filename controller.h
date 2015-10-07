@@ -99,6 +99,12 @@ public:
 
     /// get the first led controller in the chain of controllers
     static CLEDController *head() { return m_pHead; }
+
+
+    /// get the last led controller in the chain of controllers
+    static CLEDController *tail() { return m_pTail; }
+
+
     /// get the next controller in the chain after this one.  will return NULL at the end of the chain
     CLEDController *next() { return m_pNext; }
 

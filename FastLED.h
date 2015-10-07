@@ -392,6 +392,10 @@ public:
 	/// @returns the current global brightness value
 	uint8_t getBrightness() { return m_Scale; }
 
+	/// Get the current min micro setting
+	/// @returns the current global min refersh rate value
+	uint32_t getMinMicros(){ return m_nMinMicros; }
+
 	/// Update all our controllers with the current led colors, using the passed in brightness
 	/// @param scale temporarily override the scale
 	void show(uint8_t scale);
